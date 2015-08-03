@@ -1,0 +1,23 @@
+{
+  "name": "clock-interval",
+  "version": "1.0.0",
+  "description": "A precise interval timer pinned to system clock",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taylorhakes/clock-interval.git"
+  },
+  "author": "Taylor Hakes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taylorhakes/clock-interval/issues"
+  },
+  "homepage": "https://github.com/taylorhakes/clock-interval",
+  "devDependencies": {
+    "sinon": "^1.15.4",
+    "tape": "^4.0.1"
+  }
+}
