@@ -31,3 +31,4 @@ timer.cancel();
 ```
 
 ## Why not use setInterval?
+Check the link for more info [https://taylorhakes.com/2015/08/03/perfect-setinterval/](https://taylorhakes.com/2015/08/03/perfect-setinterval/)
