@@ -62,3 +62,33 @@ test('Calls function multiple times', function(t) {
 	timer.restore();
 	t.end();
 });
+test('Cancel works', function(t) {
+	var fn = sinon.stub();
+
+	var timer = sinon.useFakeTimers();
+
+	// Return 2 different dates
+	sinon.stub(Date, 'now', (function() {
+		var count = 0;
+		return function() {
+			if (count === 0) {
+				count++;
+				return 1438569041176;
+			} else {
+				return 1438569042004;
+			}
+
+		}
+	})());
+	var interval = clockInterval(fn);
+
+	timer.tick(824);
+	timer.tick(995);
+	t.assert(fn.callCount === 1);
+	interval.cancel();
+	timer.tick(1);
+	t.assert(fn.callCount === 1);
+
+	timer.restore();
+	t.end();
+});
