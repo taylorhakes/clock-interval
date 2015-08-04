@@ -1,6 +1,6 @@
 {
   "name": "clock-interval",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A precise interval timer pinned to system clock",
   "main": "index.js",
   "scripts": {
