@@ -1,4 +1,4 @@
-# perfect-interval
+# clock-interval
 A precise interval timer pinned to system clock
 
 ## How to use
